@@ -1,9 +1,10 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: To Do
+status: Refined
 assignee: []
 created_date: '2026-10-12 11:28'
+updated_date: '2026-10-13 18:20'
 labels:
   - 'tier:S'
 dependencies: []

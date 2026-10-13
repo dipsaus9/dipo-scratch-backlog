@@ -1,10 +1,10 @@
 ---
 id: TASK-2
 title: Rename the export setting
-status: To Do
+status: Refined
 assignee: []
 created_date: '2026-10-12 11:28'
-updated_date: '2026-10-13 15:33'
+updated_date: '2026-10-13 18:20'
 labels:
   - 'tier:S'
   - dipo-live-10895047cc
