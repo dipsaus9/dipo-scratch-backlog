@@ -1,7 +1,7 @@
 ---
 id: TASK-2
 title: Rename the export setting
-status: Refined
+status: To Do
 assignee: []
 created_date: '2026-10-12 11:28'
 updated_date: '2026-10-13 15:33'

@@ -1,7 +1,7 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: Ready
+status: To Do
 assignee: []
 created_date: '2026-10-12 11:28'
 labels:

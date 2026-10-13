@@ -1,7 +1,7 @@
 ---
 id: TASK-3
 title: Export stories as JSON
-status: Parked
+status: To Do
 assignee: []
 created_date: '2026-10-12 11:28'
 labels:
