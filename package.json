@@ -1,6 +1,7 @@
 {
   "name": "dipo-fixture",
   "private": true,
+  "packageManager": "bun@1.4.2",
   "type": "module",
   "scripts": {
     "verify": "bun test"
