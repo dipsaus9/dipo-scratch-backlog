@@ -4,7 +4,7 @@ title: Add the CSV export command
 status: Ready
 assignee: []
 created_date: '2026-10-12 11:28'
-updated_date: '2026-10-14 08:36'
+updated_date: '2026-10-14 13:20'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -21,6 +21,8 @@ ordinal: 1000
 <!-- SECTION:DESCRIPTION:BEGIN -->
 Outcome: maintainers can export the story list as CSV for a spreadsheet.
 
+Add a function `exportCsv(stories: Story[]): string` in `src/stories.ts` that returns CSV text: a header row `id,title` first, then one row per story. Quote a field that contains a comma or a double quote. No CLI entry point or script: the function is the export. Tests go in `test/stories.test.ts`.
+
 ```dipo
 branch: "TASK-1/add-the-csv-export-command"
 unknowns: []
@@ -29,7 +31,7 @@ test_plan:
     - kind: "automated"
       check: "(unit) one CSV row per story, header first"
     - kind: "manual"
-      check: "Run the export and open the file in a spreadsheet"
+      check: "Paste the output of exportCsv into a spreadsheet"
       expect: "Every story shows on its own row"
 ```
 <!-- SECTION:DESCRIPTION:END -->
