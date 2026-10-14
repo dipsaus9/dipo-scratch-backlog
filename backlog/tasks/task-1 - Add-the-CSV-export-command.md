@@ -4,10 +4,15 @@ title: Add the CSV export command
 status: Refined
 assignee: []
 created_date: '2026-10-12 11:28'
-updated_date: '2026-10-13 18:20'
+updated_date: '2026-10-14 08:21'
 labels:
   - 'tier:S'
+milestone: m-0
 dependencies: []
+references:
+  - src/
+  - test/
+type: feature
 ordinal: 1000
 ---
 
