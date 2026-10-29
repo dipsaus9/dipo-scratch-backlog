@@ -1,9 +1,10 @@
 ---
 id: TASK-6
 title: Export stories as JSON with exportJson
-status: Ready
+status: Refined
 assignee: []
 created_date: '2026-10-29 21:21'
+updated_date: '2026-10-29 21:22'
 labels:
   - 'tier:S'
 dependencies: []
