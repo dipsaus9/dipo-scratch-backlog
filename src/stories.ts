@@ -14,6 +14,10 @@ function csvField(value: string): string {
   return value;
 }
 
+export function exportJson(stories: Story[]): string {
+  return JSON.stringify(stories.map((story) => ({ id: story.id, title: story.title }))) + "\n";
+}
+
 export function exportCsv(stories: Story[]): string {
   const rows = stories.map((story) => `${csvField(story.id)},${csvField(story.title)}`);
   return ["id,title", ...rows].join("\n") + "\n";
