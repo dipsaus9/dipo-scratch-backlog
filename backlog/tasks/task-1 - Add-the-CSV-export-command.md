@@ -1,7 +1,7 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-10-12 11:28'
 updated_date: '2026-10-29 08:09'
@@ -12,6 +12,9 @@ dependencies: []
 references:
   - src/
   - test/
+modified_files:
+  - src/stories.ts
+  - test/stories.test.ts
 type: feature
 ordinal: 1000
 ---
@@ -59,3 +62,19 @@ Parked 2026-10-29 08:05 UTC: ambiguous-spec
 
 Resumed 2026-10-29 08:08 UTC; grants: none; note: Keep the title feat(TASK-1) and the story id. The pr-title check in this repository was wrong: it was copied from another project and only knew DIPO-<n>. It now accepts TASK-<n> on main (PR #13). Not…
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-10-29 08:09 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 1
+- Review rounds: 1, failed 0
+- Budget used: 28,967 of 300,000 tokens
+- Runs: 1; resumes: 1
+- Parks: 1
+  - 2026-10-29 08:05 UTC ambiguous-spec: The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed…
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
