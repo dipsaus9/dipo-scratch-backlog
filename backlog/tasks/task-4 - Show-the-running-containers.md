@@ -1,9 +1,10 @@
 ---
 id: TASK-4
 title: Show the running containers
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-15 11:55'
+updated_date: '2026-10-29 10:24'
 labels:
   - 'tier:S'
 milestone: m-0
