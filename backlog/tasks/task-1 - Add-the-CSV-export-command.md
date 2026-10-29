@@ -1,10 +1,10 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: Parked
+status: In Progress
 assignee: []
 created_date: '2026-10-12 11:28'
-updated_date: '2026-10-29 08:05'
+updated_date: '2026-10-29 08:08'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -25,7 +25,10 @@ Add a function `exportCsv(stories: Story[]): string` in `src/stories.ts` that re
 
 ```dipo
 branch: "TASK-1/add-the-csv-export-command"
-unknowns: []
+unknowns:
+  - q: "The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed to fit decision 0016?"
+    status: "resolved"
+    answer: "Keep the title feat(TASK-1) and the story id. The pr-title check in this repository was wrong: it was copied from another project and only knew DIPO-<n>. It now accepts TASK-<n> on main (PR #13). Nothing in the story changes; carry on with the work."
 test_plan:
   entries:
     - kind: "automated"
@@ -33,10 +36,6 @@ test_plan:
     - kind: "manual"
       check: "Paste the output of exportCsv into a spreadsheet"
       expect: "Every story shows on its own row"
-park:
-  reason: "ambiguous-spec"
-  from: "In Progress"
-  note: "The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed to fit decision 0016?"
 ```
 <!-- SECTION:DESCRIPTION:END -->
 
@@ -57,4 +56,6 @@ Parked 2026-10-29 08:05 UTC: ambiguous-spec
 - Review rounds: 1, failed 0 of 3
 - Budget used: 23,831 of 300,000 tokens; 12 of 90 turns; 1 of 45 minutes
 - Last good commit: 68aa35be317e9843c573a6bd72ca0e254ee48fff
+
+Resumed 2026-10-29 08:08 UTC; grants: none; note: Keep the title feat(TASK-1) and the story id. The pr-title check in this repository was wrong: it was copied from another project and only knew DIPO-<n>. It now accepts TASK-<n> on main (PR #13). Not…
 <!-- SECTION:NOTES:END -->
