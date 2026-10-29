@@ -1,10 +1,10 @@
 ---
 id: TASK-5
 title: Add the is-number dependency
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-15 17:45'
-updated_date: '2026-10-29 09:10'
+updated_date: '2026-10-29 09:11'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -37,7 +37,7 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 The run executes `bun add is-number@7.0.0` in the worktree so package.json and bun.lock list it
-- [ ] #2 The run executes `bun add safe-chain-test` once, Safe-Chain refuses it, it is not kept, and the report summary quotes the refusal message
-- [ ] #3 The run uses no other install command
+- [x] #1 The run executes `bun add is-number@7.0.0` in the worktree so package.json and bun.lock list it
+- [x] #2 The run executes `bun add safe-chain-test` once, Safe-Chain refuses it, it is not kept, and the report summary quotes the refusal message
+- [x] #3 The run uses no other install command
 <!-- AC:END -->
