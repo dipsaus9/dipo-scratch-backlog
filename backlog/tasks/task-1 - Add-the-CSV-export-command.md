@@ -1,7 +1,7 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-12 11:28'
 updated_date: '2026-10-29 08:04'
@@ -38,6 +38,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 The export command writes one CSV row per story
-- [ ] #2 A header row names every column
+- [x] #1 The export command writes one CSV row per story
+- [x] #2 A header row names every column
 <!-- AC:END -->
