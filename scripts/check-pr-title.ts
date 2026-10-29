@@ -2,7 +2,7 @@
 //
 //   <type>(<scope>)[!]: <subject>
 //   type    = feat | fix | perf | refactor | docs | test | build | ci | chore | revert
-//   scope   = DIPO-<n>[.<m>] | deps (chore or fix only) | main (chore only) | backlog
+//   scope   = DIPO-<n>[.<m>] | TASK-<n>[.<m>] | deps (chore or fix only) | main (chore only) | backlog
 //   subject = 1 to 100 characters, no trailing period
 //
 // Usage in CI: PR_TITLE="<title>" bun scripts/check-pr-title.ts
@@ -25,7 +25,7 @@ export const MAX_SUBJECT_LENGTH = 100;
 export type TitleCheck = { ok: true } | { ok: false; reason: string };
 
 const HEADER = /^(?<type>[a-z]+)\((?<scope>[^()]*)\)(?<breaking>!?): (?<subject>.*)$/s;
-const STORY_SCOPE = /^DIPO-[1-9][0-9]*(\.[1-9][0-9]*)?$/;
+const STORY_SCOPE = /^(DIPO|TASK)-[1-9][0-9]*(\.[1-9][0-9]*)?$/;
 
 const SCOPE_TYPES: Record<string, readonly string[]> = {
   deps: ["chore", "fix"],
@@ -57,7 +57,7 @@ export function checkPrTitle(title: string): TitleCheck {
     if (allowedTypes === undefined) {
       return {
         ok: false,
-        reason: `unknown scope \`${scope}\`; allowed: DIPO-<n>[.<m>], deps, main, backlog`,
+        reason: `unknown scope \`${scope}\`; allowed: DIPO-<n>[.<m>], TASK-<n>[.<m>], deps, main, backlog`,
       };
     }
     if (!allowedTypes.includes(type)) {
