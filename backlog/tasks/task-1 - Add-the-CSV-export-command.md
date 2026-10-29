@@ -1,10 +1,10 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: Ready
+status: Done
 assignee: []
 created_date: '2026-10-12 11:28'
-updated_date: '2026-10-14 13:20'
+updated_date: '2026-10-29 08:09'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -12,6 +12,9 @@ dependencies: []
 references:
   - src/
   - test/
+modified_files:
+  - src/stories.ts
+  - test/stories.test.ts
 type: feature
 ordinal: 1000
 ---
@@ -25,7 +28,10 @@ Add a function `exportCsv(stories: Story[]): string` in `src/stories.ts` that re
 
 ```dipo
 branch: "TASK-1/add-the-csv-export-command"
-unknowns: []
+unknowns:
+  - q: "The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed to fit decision 0016?"
+    status: "resolved"
+    answer: "Keep the title feat(TASK-1) and the story id. The pr-title check in this repository was wrong: it was copied from another project and only knew DIPO-<n>. It now accepts TASK-<n> on main (PR #13). Nothing in the story changes; carry on with the work."
 test_plan:
   entries:
     - kind: "automated"
@@ -38,6 +44,37 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 The export command writes one CSV row per story
-- [ ] #2 A header row names every column
+- [x] #1 The export command writes one CSV row per story
+- [x] #2 A header row names every column
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Parked 2026-10-29 08:05 UTC: ambiguous-spec
+- Detail: The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed…
+- Run: run_01M63AWTV8SSW92B74Z9XX0ECJ
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0 of 3; CI attempts: 1 of 2
+- Review rounds: 1, failed 0 of 3
+- Budget used: 23,831 of 300,000 tokens; 12 of 90 turns; 1 of 45 minutes
+- Last good commit: 68aa35be317e9843c573a6bd72ca0e254ee48fff
+
+Resumed 2026-10-29 08:08 UTC; grants: none; note: Keep the title feat(TASK-1) and the story id. The pr-title check in this repository was wrong: it was copied from another project and only knew DIPO-<n>. It now accepts TASK-<n> on main (PR #13). Not…
+<!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-10-29 08:09 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 1
+- Review rounds: 1, failed 0
+- Budget used: 28,967 of 300,000 tokens
+- Runs: 1; resumes: 1
+- Parks: 1
+  - 2026-10-29 08:05 UTC ambiguous-spec: The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed…
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->

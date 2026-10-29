@@ -1,7 +1,17 @@
 import { expect, test } from "bun:test";
 
-import { storyLine } from "../src/stories";
+import { exportCsv, storyLine } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
+});
+
+test("the csv export writes a header row, then one row per story", () => {
+  expect(
+    exportCsv([
+      { id: "TASK-1", title: "Export" },
+      { id: "TASK-2", title: "Fix, then ship" },
+      { id: "TASK-3", title: 'Say "hi"' },
+    ]),
+  ).toBe('id,title\nTASK-1,Export\nTASK-2,"Fix, then ship"\nTASK-3,"Say ""hi"""\n');
 });
