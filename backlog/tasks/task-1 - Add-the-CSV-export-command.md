@@ -1,7 +1,7 @@
 ---
 id: TASK-1
 title: Add the CSV export command
-status: In Progress
+status: Parked
 assignee: []
 created_date: '2026-10-12 11:28'
 updated_date: '2026-10-29 08:05'
@@ -33,6 +33,10 @@ test_plan:
     - kind: "manual"
       check: "Paste the output of exportCsv into a spreadsheet"
       expect: "Every story shows on its own row"
+park:
+  reason: "ambiguous-spec"
+  from: "In Progress"
+  note: "The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed to fit decision 0016?"
 ```
 <!-- SECTION:DESCRIPTION:END -->
 
@@ -41,3 +45,16 @@ test_plan:
 - [x] #1 The export command writes one CSV row per story
 - [x] #2 A header row names every column
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Parked 2026-10-29 08:05 UTC: ambiguous-spec
+- Detail: The pr-title check rejects scope `TASK-1` and only accepts DIPO-<n>[.<m>], deps, main or backlog. Should the PR title use a DIPO-<n> scope for this story, or should the story id for TASK-1 be changed…
+- Run: run_01M63AWTV8SSW92B74Z9XX0ECJ
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0 of 3; CI attempts: 1 of 2
+- Review rounds: 1, failed 0 of 3
+- Budget used: 23,831 of 300,000 tokens; 12 of 90 turns; 1 of 45 minutes
+- Last good commit: 68aa35be317e9843c573a6bd72ca0e254ee48fff
+<!-- SECTION:NOTES:END -->
