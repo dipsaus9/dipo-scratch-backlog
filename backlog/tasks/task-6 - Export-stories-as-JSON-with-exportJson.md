@@ -1,7 +1,7 @@
 ---
 id: TASK-6
 title: Export stories as JSON with exportJson
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-29 21:21'
 updated_date: '2026-10-29 21:27'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 exportJson in src/stories.ts returns a JSON array of { id, title } in the given order, ending in one newline
-- [ ] #2 test/stories.test.ts tests a story list round trip, a title with quotes and commas, and the empty list
+- [x] #1 exportJson in src/stories.ts returns a JSON array of { id, title } in the given order, ending in one newline
+- [x] #2 test/stories.test.ts tests a story list round trip, a title with quotes and commas, and the empty list
 <!-- AC:END -->
