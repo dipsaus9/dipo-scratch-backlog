@@ -1,9 +1,10 @@
 ---
 id: TASK-5
 title: Add the is-number dependency
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-15 17:45'
+updated_date: '2026-10-29 09:10'
 labels:
   - 'tier:S'
 milestone: m-0
