@@ -5,5 +5,8 @@
   "type": "module",
   "scripts": {
     "verify": "bun test"
+  },
+  "dependencies": {
+    "is-number": "7.0.0"
   }
 }
