@@ -19,6 +19,10 @@ export function countStories(stories: Story[]): number {
   return stories.length;
 }
 
+export function storyIds(stories: Story[]): string[] {
+  return stories.map((story) => story.id);
+}
+
 function csvField(value: string): string {
   if (/[",\r\n]/.test(value)) {
     return `"${value.replaceAll('"', '""')}"`;

@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, sortStories, storyLine } from "../src/stories";
+import { countStories, exportCsv, exportJson, sortStories, storyIds, storyLine } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -44,6 +44,17 @@ test("sortStories orders by the id number and leaves the input unchanged", () =>
 
 test("sortStories of an empty list is []", () => {
   expect(sortStories([])).toEqual([]);
+});
+
+test("storyIds returns [] for an empty list and the ids in order for three stories", () => {
+  expect(storyIds([])).toEqual([]);
+  expect(
+    storyIds([
+      { id: "TASK-3", title: "Ship" },
+      { id: "TASK-1", title: "Export" },
+      { id: "TASK-2", title: "Fix" },
+    ]),
+  ).toEqual(["TASK-3", "TASK-1", "TASK-2"]);
 });
 
 test("countStories returns 0 for an empty list and 3 for three stories", () => {
