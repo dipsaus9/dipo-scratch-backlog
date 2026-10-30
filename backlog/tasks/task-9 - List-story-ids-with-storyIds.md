@@ -1,7 +1,7 @@
 ---
 id: TASK-9
 title: List story ids with storyIds
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-30 21:53'
 updated_date: '2026-10-30 21:54'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 storyIds in src/stories.ts returns the ids in the given order
-- [ ] #2 test/stories.test.ts tests the empty list and a list of three in order
+- [x] #1 storyIds in src/stories.ts returns the ids in the given order
+- [x] #2 test/stories.test.ts tests the empty list and a list of three in order
 <!-- AC:END -->
