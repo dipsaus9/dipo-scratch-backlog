@@ -1,9 +1,10 @@
 ---
 id: TASK-8
 title: Count stories with countStories
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-30 16:42'
+updated_date: '2026-10-30 16:43'
 labels:
   - 'tier:S'
 milestone: m-0
