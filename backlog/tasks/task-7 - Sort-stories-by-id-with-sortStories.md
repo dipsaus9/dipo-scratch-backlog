@@ -1,9 +1,10 @@
 ---
 id: TASK-7
 title: Sort stories by id with sortStories
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-30 09:26'
+updated_date: '2026-10-30 09:26'
 labels:
   - 'tier:S'
 milestone: m-0
