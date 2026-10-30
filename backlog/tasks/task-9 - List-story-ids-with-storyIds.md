@@ -1,9 +1,10 @@
 ---
 id: TASK-9
 title: List story ids with storyIds
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-30 21:53'
+updated_date: '2026-10-30 21:54'
 labels:
   - 'tier:S'
 milestone: m-0
