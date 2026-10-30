@@ -1,15 +1,18 @@
 ---
 id: TASK-7
 title: Sort stories by id with sortStories
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-10-30 09:26'
-updated_date: '2026-10-30 09:27'
+updated_date: '2026-10-30 09:28'
 labels:
   - 'tier:S'
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -38,3 +41,18 @@ test_plan:
 - [x] #1 sortStories in src/stories.ts returns a new array sorted by the id number, leaving the input unchanged
 - [x] #2 test/stories.test.ts tests TASK-2 before TASK-10, an unchanged input, and the empty list
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-10-30 09:28 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 17,066 of 300,000 tokens
+- Runs: 1; resumes: 0
+- Parks: none
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
