@@ -1,10 +1,10 @@
 ---
 id: TASK-7
 title: Sort stories by id with sortStories
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-30 09:26'
-updated_date: '2026-10-30 09:26'
+updated_date: '2026-10-30 09:27'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 sortStories in src/stories.ts returns a new array sorted by the id number, leaving the input unchanged
-- [ ] #2 test/stories.test.ts tests TASK-2 before TASK-10, an unchanged input, and the empty list
+- [x] #1 sortStories in src/stories.ts returns a new array sorted by the id number, leaving the input unchanged
+- [x] #2 test/stories.test.ts tests TASK-2 before TASK-10, an unchanged input, and the empty list
 <!-- AC:END -->
