@@ -1,10 +1,10 @@
 ---
 id: TASK-8
 title: Count stories with countStories
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-30 16:42'
-updated_date: '2026-10-30 16:43'
+updated_date: '2026-10-30 16:44'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 countStories in src/stories.ts returns the number of stories in the list
-- [ ] #2 test/stories.test.ts tests the empty list and a list of three
+- [x] #1 countStories in src/stories.ts returns the number of stories in the list
+- [x] #2 test/stories.test.ts tests the empty list and a list of three
 <!-- AC:END -->
