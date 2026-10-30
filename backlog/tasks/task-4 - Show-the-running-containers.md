@@ -1,9 +1,10 @@
 ---
 id: TASK-4
 title: Show the running containers
-status: Ready
+status: In Review
 assignee: []
 created_date: '2026-10-15 11:55'
+updated_date: '2026-10-29 10:24'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -34,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 The run executes `docker ps` once in the worktree and puts its output in the report summary
-- [ ] #2 When `docker ps` is blocked or denied, the run reports blocked with needsPermission {tool: Bash, action: docker ps} and does not retry
+- [x] #1 The run executes `docker ps` once in the worktree and puts its output in the report summary
+- [x] #2 When `docker ps` is blocked or denied, the run reports blocked with needsPermission {tool: Bash, action: docker ps} and does not retry
 <!-- AC:END -->
