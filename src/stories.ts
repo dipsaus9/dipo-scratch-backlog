@@ -7,6 +7,14 @@ export function storyLine(story: Story): string {
   return `${story.id} ${story.title}`;
 }
 
+function idNumber(id: string): number {
+  return Number(id.slice(id.lastIndexOf("-") + 1));
+}
+
+export function sortStories(stories: Story[]): Story[] {
+  return [...stories].sort((a, b) => idNumber(a.id) - idNumber(b.id));
+}
+
 function csvField(value: string): string {
   if (/[",\r\n]/.test(value)) {
     return `"${value.replaceAll('"', '""')}"`;
