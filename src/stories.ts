@@ -15,6 +15,10 @@ export function sortStories(stories: Story[]): Story[] {
   return [...stories].sort((a, b) => idNumber(a.id) - idNumber(b.id));
 }
 
+export function countStories(stories: Story[]): number {
+  return stories.length;
+}
+
 function csvField(value: string): string {
   if (/[",\r\n]/.test(value)) {
     return `"${value.replaceAll('"', '""')}"`;
