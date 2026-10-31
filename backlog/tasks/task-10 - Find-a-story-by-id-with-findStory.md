@@ -1,7 +1,7 @@
 ---
 id: TASK-10
 title: Find a story by id with findStory
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-10-31 08:18'
 updated_date: '2026-10-31 08:19'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 findStory in src/stories.ts returns the story with the id, or undefined
-- [ ] #2 test/stories.test.ts tests a found id, a missing id and the empty list
+- [x] #1 findStory in src/stories.ts returns the story with the id, or undefined
+- [x] #2 test/stories.test.ts tests a found id, a missing id and the empty list
 <!-- AC:END -->
