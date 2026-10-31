@@ -15,6 +15,10 @@ export function sortStories(stories: Story[]): Story[] {
   return [...stories].sort((a, b) => idNumber(a.id) - idNumber(b.id));
 }
 
+export function findStory(stories: Story[], id: string): Story | undefined {
+  return stories.find((story) => story.id === id);
+}
+
 export function countStories(stories: Story[]): number {
   return stories.length;
 }
