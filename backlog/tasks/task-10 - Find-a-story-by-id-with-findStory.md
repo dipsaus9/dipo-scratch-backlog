@@ -1,9 +1,10 @@
 ---
 id: TASK-10
 title: Find a story by id with findStory
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-10-31 08:18'
+updated_date: '2026-10-31 08:19'
 labels:
   - 'tier:S'
 milestone: m-0
