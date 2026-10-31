@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, sortStories, storyIds, storyLine } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, sortStories, storyIds, storyLine } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -66,4 +66,14 @@ test("countStories returns 0 for an empty list and 3 for three stories", () => {
       { id: "TASK-3", title: "Ship" },
     ]),
   ).toBe(3);
+});
+
+test("findStory returns the story with the id, undefined for a missing id, and undefined for an empty list", () => {
+  const stories = [
+    { id: "TASK-1", title: "Export" },
+    { id: "TASK-2", title: "Fix" },
+  ];
+  expect(findStory(stories, "TASK-2")).toEqual({ id: "TASK-2", title: "Fix" });
+  expect(findStory(stories, "TASK-9")).toBeUndefined();
+  expect(findStory([], "TASK-1")).toBeUndefined();
 });
