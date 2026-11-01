@@ -1,9 +1,10 @@
 ---
 id: TASK-17
 title: Find the shortest and longest story title
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 19:01'
+updated_date: '2026-11-01 19:01'
 labels:
   - 'tier:S'
 milestone: m-0
