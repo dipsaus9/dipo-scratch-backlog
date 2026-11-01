@@ -1,7 +1,7 @@
 ---
 id: TASK-13
 title: Show a story as one label with storyLabel
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-11-01 14:39'
 updated_date: '2026-11-01 14:55'
@@ -10,6 +10,9 @@ labels:
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -56,3 +59,19 @@ Parked 2026-11-01 14:54 UTC: ambiguous-spec
 
 Resumed 2026-11-01 14:54 UTC; grants: none; note: Use a colon and a space, so the label reads TASK-1: Export.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-01 14:55 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 22,277 of 300,000 tokens
+- Runs: 1; resumes: 1
+- Parks: 1
+  - 2026-11-01 14:54 UTC ambiguous-spec: Which separator should storyLabel put between the story id and the title (for example " - ", ": ", " | ", or a tab)?
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
