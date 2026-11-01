@@ -1,7 +1,7 @@
 ---
 id: TASK-13
 title: Show a story as one label with storyLabel
-status: Parked
+status: In Progress
 assignee: []
 created_date: '2026-11-01 14:39'
 updated_date: '2026-11-01 14:54'
@@ -25,15 +25,14 @@ Add `storyLabel(story: Story): string` to src/stories.ts that joins the id and t
 
 ```dipo
 branch: "TASK-13/story-label"
-unknowns: []
+unknowns:
+  - q: "Which separator should storyLabel put between the story id and the title (for example \" - \", \": \", \" | \", or a tab)?"
+    status: "resolved"
+    answer: "Use a colon and a space, so the label reads TASK-1: Export."
 test_plan:
   entries:
     - kind: "automated"
       check: "(unit) storyLabel joins id and title with the maintainer's separator"
-park:
-  reason: "ambiguous-spec"
-  from: "In Progress"
-  note: "Which separator should storyLabel put between the story id and the title (for example \" - \", \": \", \" | \", or a tab)?"
 ```
 <!-- SECTION:DESCRIPTION:END -->
 
@@ -54,4 +53,6 @@ Parked 2026-11-01 14:54 UTC: ambiguous-spec
 - Review rounds: 0, failed 0 of 3
 - Budget used: 14,533 of 300,000 tokens; 2 of 90 turns; 0 of 45 minutes
 - Last good commit: e75bfb18044b2ab9c1a799cc039be4e0cece5dfb
+
+Resumed 2026-11-01 14:54 UTC; grants: none; note: Use a colon and a space, so the label reads TASK-1: Export.
 <!-- SECTION:NOTES:END -->
