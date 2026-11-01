@@ -1,10 +1,10 @@
 ---
 id: TASK-11
 title: List story titles with storyTitles
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 14:39'
-updated_date: '2026-11-01 14:43'
+updated_date: '2026-11-01 14:44'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 storyTitles in src/stories.ts returns the title of each story in order
-- [ ] #2 test/stories.test.ts tests two stories and the empty list
+- [x] #1 storyTitles in src/stories.ts returns the title of each story in order
+- [x] #2 test/stories.test.ts tests two stories and the empty list
 <!-- AC:END -->
