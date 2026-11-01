@@ -1,3 +1,4 @@
+// Story helpers of the dipo scratch fixture.
 export interface Story {
   id: string;
   title: string;
