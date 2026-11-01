@@ -1,10 +1,10 @@
 ---
 id: TASK-4
 title: Show the running containers
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-10-15 11:55'
-updated_date: '2026-10-29 10:24'
+updated_date: '2026-11-01 14:41'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -38,3 +38,18 @@ test_plan:
 - [x] #1 The run executes `docker ps` once in the worktree and puts its output in the report summary
 - [x] #2 When `docker ps` is blocked or denied, the run reports blocked with needsPermission {tool: Bash, action: docker ps} and does not retry
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-01 14:41 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 13,333 of 300,000 tokens
+- Runs: 1; resumes: 0
+- Parks: none
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 1
+<!-- SECTION:FINAL_SUMMARY:END -->
