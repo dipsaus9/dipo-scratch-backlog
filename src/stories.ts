@@ -1,4 +1,4 @@
-// Story helpers of this fixture: the Story type, formatting, sorting, lookup and export.
+// Story helpers of the dipo scratch fixture.
 export interface Story {
   id: string;
   title: string;
