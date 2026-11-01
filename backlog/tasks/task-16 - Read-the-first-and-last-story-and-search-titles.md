@@ -1,7 +1,7 @@
 ---
 id: TASK-16
 title: Read the first and last story and search titles
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-11-01 15:00'
 updated_date: '2026-11-01 15:03'
@@ -10,6 +10,9 @@ labels:
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -54,3 +57,19 @@ Parked 2026-11-01 15:02 UTC: by-maintainer
 
 Resumed 2026-11-01 15:02 UTC; grants: none; note: hand test: carry on with the story
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-01 15:03 UTC
+- Criteria met: 3 of 3 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 21,427 of 300,000 tokens
+- Runs: 1; resumes: 1
+- Parks: 1
+  - 2026-11-01 15:02 UTC by-maintainer: hand test: park mid-run
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
