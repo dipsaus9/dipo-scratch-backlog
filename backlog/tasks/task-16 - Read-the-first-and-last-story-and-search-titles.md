@@ -1,7 +1,7 @@
 ---
 id: TASK-16
 title: Read the first and last story and search titles
-status: Parked
+status: In Progress
 assignee: []
 created_date: '2026-11-01 15:00'
 updated_date: '2026-11-01 15:02'
@@ -30,10 +30,6 @@ test_plan:
   entries:
     - kind: "automated"
       check: "(unit) firstStory, lastStory and storiesWithTitle each have a test with an empty list and a list of two"
-park:
-  reason: "by-maintainer"
-  from: "In Progress"
-  note: "hand test: park mid-run"
 ```
 <!-- SECTION:DESCRIPTION:END -->
 
@@ -55,4 +51,6 @@ Parked 2026-11-01 15:02 UTC: by-maintainer
 - Review rounds: 0, failed 0 of 3
 - Budget used: 7,315 of 300,000 tokens; 4 of 90 turns; 0 of 45 minutes
 - Last good commit: 2218a1aebe3e7c7bb78bf5112274b72958cf683f
+
+Resumed 2026-11-01 15:02 UTC; grants: none; note: hand test: carry on with the story
 <!-- SECTION:NOTES:END -->
