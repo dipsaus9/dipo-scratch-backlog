@@ -1,7 +1,7 @@
 ---
 id: TASK-13
 title: Show a story as one label with storyLabel
-status: In Progress
+status: Parked
 assignee: []
 created_date: '2026-11-01 14:39'
 updated_date: '2026-11-01 14:54'
@@ -30,6 +30,10 @@ test_plan:
   entries:
     - kind: "automated"
       check: "(unit) storyLabel joins id and title with the maintainer's separator"
+park:
+  reason: "ambiguous-spec"
+  from: "In Progress"
+  note: "Which separator should storyLabel put between the story id and the title (for example \" - \", \": \", \" | \", or a tab)?"
 ```
 <!-- SECTION:DESCRIPTION:END -->
 
@@ -38,3 +42,16 @@ test_plan:
 - [ ] #1 storyLabel in src/stories.ts joins the id and the title with the separator the maintainer chose
 - [ ] #2 test/stories.test.ts tests storyLabel with that separator
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Parked 2026-11-01 14:54 UTC: ambiguous-spec
+- Detail: Which separator should storyLabel put between the story id and the title (for example " - ", ": ", " | ", or a tab)?
+- Run: run_01M6BSMZC9CVHV8GC1ZSGWPGDF
+- Criteria met: 0 of 2 (as the worker reported them)
+- Loops: 0 of 3; CI attempts: 0 of 2
+- Review rounds: 0, failed 0 of 3
+- Budget used: 14,533 of 300,000 tokens; 2 of 90 turns; 0 of 45 minutes
+- Last good commit: e75bfb18044b2ab9c1a799cc039be4e0cece5dfb
+<!-- SECTION:NOTES:END -->
