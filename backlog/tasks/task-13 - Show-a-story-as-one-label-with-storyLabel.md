@@ -1,9 +1,10 @@
 ---
 id: TASK-13
 title: Show a story as one label with storyLabel
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 14:39'
+updated_date: '2026-11-01 14:54'
 labels:
   - 'tier:S'
 milestone: m-0
