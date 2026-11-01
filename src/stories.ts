@@ -1,3 +1,4 @@
+// Story helpers of this fixture: the Story type, formatting, sorting, lookup and export.
 export interface Story {
   id: string;
   title: string;
