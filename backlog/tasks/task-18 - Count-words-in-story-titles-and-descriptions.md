@@ -1,9 +1,10 @@
 ---
 id: TASK-18
 title: Count words in story titles and descriptions
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 19:03'
+updated_date: '2026-11-01 19:04'
 labels:
   - 'tier:S'
 milestone: m-0
