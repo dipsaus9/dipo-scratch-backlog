@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -114,4 +114,24 @@ test("storiesWithTitle returns [] for an empty list and the stories whose title 
   ];
   expect(storiesWithTitle(stories, "Export")).toEqual([{ id: "TASK-1", title: "Export" }]);
   expect(storiesWithTitle(stories, "Nothing")).toEqual([]);
+});
+
+test("shortestTitle returns undefined for an empty list and the shorter title of two", () => {
+  expect(shortestTitle([])).toBeUndefined();
+  expect(
+    shortestTitle([
+      { id: "TASK-1", title: "Export" },
+      { id: "TASK-2", title: "Fix" },
+    ]),
+  ).toBe("Fix");
+});
+
+test("longestTitle returns undefined for an empty list and the longer title of two", () => {
+  expect(longestTitle([])).toBeUndefined();
+  expect(
+    longestTitle([
+      { id: "TASK-1", title: "Export" },
+      { id: "TASK-2", title: "Fix" },
+    ]),
+  ).toBe("Export");
 });
