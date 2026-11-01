@@ -1,9 +1,10 @@
 ---
 id: TASK-11
 title: List story titles with storyTitles
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 14:39'
+updated_date: '2026-11-01 14:43'
 labels:
   - 'tier:S'
 milestone: m-0
