@@ -1,10 +1,10 @@
 ---
 id: TASK-13
 title: Show a story as one label with storyLabel
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 14:39'
-updated_date: '2026-11-01 14:54'
+updated_date: '2026-11-01 14:55'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -38,8 +38,8 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 storyLabel in src/stories.ts joins the id and the title with the separator the maintainer chose
-- [ ] #2 test/stories.test.ts tests storyLabel with that separator
+- [x] #1 storyLabel in src/stories.ts joins the id and the title with the separator the maintainer chose
+- [x] #2 test/stories.test.ts tests storyLabel with that separator
 <!-- AC:END -->
 
 ## Implementation Notes
