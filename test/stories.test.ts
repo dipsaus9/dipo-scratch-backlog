@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, sortStories, storyIds, storyLabel, storyLine, storyTitles } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -90,4 +90,28 @@ test("findStory returns the story with the id, undefined for a missing id, and u
   expect(findStory(stories, "TASK-2")).toEqual({ id: "TASK-2", title: "Fix" });
   expect(findStory(stories, "TASK-9")).toBeUndefined();
   expect(findStory([], "TASK-1")).toBeUndefined();
+});
+
+test("firstStory and lastStory return undefined for an empty list", () => {
+  expect(firstStory([])).toBeUndefined();
+  expect(lastStory([])).toBeUndefined();
+});
+
+test("firstStory and lastStory return the first and the last of two stories", () => {
+  const stories = [
+    { id: "TASK-1", title: "Export" },
+    { id: "TASK-2", title: "Fix" },
+  ];
+  expect(firstStory(stories)).toEqual({ id: "TASK-1", title: "Export" });
+  expect(lastStory(stories)).toEqual({ id: "TASK-2", title: "Fix" });
+});
+
+test("storiesWithTitle returns [] for an empty list and the stories whose title contains the word", () => {
+  expect(storiesWithTitle([], "Export")).toEqual([]);
+  const stories = [
+    { id: "TASK-1", title: "Export" },
+    { id: "TASK-2", title: "Fix" },
+  ];
+  expect(storiesWithTitle(stories, "Export")).toEqual([{ id: "TASK-1", title: "Export" }]);
+  expect(storiesWithTitle(stories, "Nothing")).toEqual([]);
 });

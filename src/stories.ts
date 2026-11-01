@@ -24,6 +24,18 @@ export function findStory(stories: Story[], id: string): Story | undefined {
   return stories.find((story) => story.id === id);
 }
 
+export function firstStory(stories: Story[]): Story | undefined {
+  return stories[0];
+}
+
+export function lastStory(stories: Story[]): Story | undefined {
+  return stories[stories.length - 1];
+}
+
+export function storiesWithTitle(stories: Story[], word: string): Story[] {
+  return stories.filter((story) => story.title.includes(word));
+}
+
 export function countStories(stories: Story[]): number {
   return stories.length;
 }

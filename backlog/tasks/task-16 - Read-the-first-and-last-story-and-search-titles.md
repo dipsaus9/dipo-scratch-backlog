@@ -1,14 +1,18 @@
 ---
 id: TASK-16
 title: Read the first and last story and search titles
-status: Ready
+status: Done
 assignee: []
 created_date: '2026-11-01 15:00'
+updated_date: '2026-11-01 15:03'
 labels:
   - 'tier:S'
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -34,7 +38,38 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 firstStory and lastStory in src/stories.ts return the first and the last story, or undefined
-- [ ] #2 storiesWithTitle in src/stories.ts returns the stories whose title contains the word
-- [ ] #3 test/stories.test.ts tests each of the three with an empty list and a list of two
+- [x] #1 firstStory and lastStory in src/stories.ts return the first and the last story, or undefined
+- [x] #2 storiesWithTitle in src/stories.ts returns the stories whose title contains the word
+- [x] #3 test/stories.test.ts tests each of the three with an empty list and a list of two
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Parked 2026-11-01 15:02 UTC: by-maintainer
+- Detail: hand test: park mid-run
+- Run: run_01M6BT39NS17VV1ZWRFNFS24JJ
+- Criteria met: 0 of 3 (as the worker reported them)
+- Loops: 0 of 3; CI attempts: 0 of 2
+- Review rounds: 0, failed 0 of 3
+- Budget used: 7,315 of 300,000 tokens; 4 of 90 turns; 0 of 45 minutes
+- Last good commit: 2218a1aebe3e7c7bb78bf5112274b72958cf683f
+
+Resumed 2026-11-01 15:02 UTC; grants: none; note: hand test: carry on with the story
+<!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-01 15:03 UTC
+- Criteria met: 3 of 3 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 21,427 of 300,000 tokens
+- Runs: 1; resumes: 1
+- Parks: 1
+  - 2026-11-01 15:02 UTC by-maintainer: hand test: park mid-run
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
