@@ -1,9 +1,10 @@
 ---
 id: TASK-16
 title: Read the first and last story and search titles
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 15:00'
+updated_date: '2026-11-01 15:02'
 labels:
   - 'tier:S'
 milestone: m-0
