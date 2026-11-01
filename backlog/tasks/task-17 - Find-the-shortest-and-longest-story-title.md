@@ -1,10 +1,10 @@
 ---
 id: TASK-17
 title: Find the shortest and longest story title
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 19:01'
-updated_date: '2026-11-01 19:01'
+updated_date: '2026-11-01 19:02'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 shortestTitle and longestTitle in src/stories.ts return the shortest and the longest title, or undefined for an empty list
-- [ ] #2 test/stories.test.ts tests each of the two with an empty list and a list of two
+- [x] #1 shortestTitle and longestTitle in src/stories.ts return the shortest and the longest title, or undefined for an empty list
+- [x] #2 test/stories.test.ts tests each of the two with an empty list and a list of two
 <!-- AC:END -->
