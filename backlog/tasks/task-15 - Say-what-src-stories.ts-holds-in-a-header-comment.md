@@ -1,7 +1,7 @@
 ---
 id: TASK-15
 title: Say what src/stories.ts holds in a header comment
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 14:55'
 updated_date: '2026-11-01 14:57'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 src/stories.ts starts with one comment line that says the file holds the story helpers of this fixture
+- [x] #1 src/stories.ts starts with one comment line that says the file holds the story helpers of this fixture
 - [ ] #2 The maintainer confirms the header comment reads well
 <!-- AC:END -->
