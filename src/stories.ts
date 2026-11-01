@@ -32,6 +32,10 @@ export function lastStory(stories: Story[]): Story | undefined {
   return stories[stories.length - 1];
 }
 
+export function storiesWithTitle(stories: Story[], word: string): Story[] {
+  return stories.filter((story) => story.title.includes(word));
+}
+
 export function countStories(stories: Story[]): number {
   return stories.length;
 }

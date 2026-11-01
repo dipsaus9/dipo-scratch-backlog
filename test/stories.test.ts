@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, sortStories, storyIds, storyLabel, storyLine, storyTitles } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -104,4 +104,14 @@ test("firstStory and lastStory return the first and the last of two stories", ()
   ];
   expect(firstStory(stories)).toEqual({ id: "TASK-1", title: "Export" });
   expect(lastStory(stories)).toEqual({ id: "TASK-2", title: "Fix" });
+});
+
+test("storiesWithTitle returns [] for an empty list and the stories whose title contains the word", () => {
+  expect(storiesWithTitle([], "Export")).toEqual([]);
+  const stories = [
+    { id: "TASK-1", title: "Export" },
+    { id: "TASK-2", title: "Fix" },
+  ];
+  expect(storiesWithTitle(stories, "Export")).toEqual([{ id: "TASK-1", title: "Export" }]);
+  expect(storiesWithTitle(stories, "Nothing")).toEqual([]);
 });
