@@ -7,6 +7,10 @@ export function storyLine(story: Story): string {
   return `${story.id} ${story.title}`;
 }
 
+export function storyLabel(story: Story): string {
+  return `${story.id}: ${story.title}`;
+}
+
 function idNumber(id: string): number {
   return Number(id.slice(id.lastIndexOf("-") + 1));
 }

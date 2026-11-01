@@ -1,9 +1,13 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, sortStories, storyIds, storyLine, storyTitles } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, sortStories, storyIds, storyLabel, storyLine, storyTitles } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
+});
+
+test("a story label joins the id and the title with a colon and a space", () => {
+  expect(storyLabel({ id: "TASK-1", title: "Export" })).toBe("TASK-1: Export");
 });
 
 test("the csv export writes a header row, then one row per story", () => {
