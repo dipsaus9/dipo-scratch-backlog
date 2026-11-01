@@ -63,3 +63,17 @@ export function exportCsv(stories: Story[]): string {
   const rows = stories.map((story) => `${csvField(story.id)},${csvField(story.title)}`);
   return ["id,title", ...rows].join("\n") + "\n";
 }
+
+export function shortestTitle(stories: Story[]): string | undefined {
+  return stories.map((story) => story.title).reduce<string | undefined>(
+    (shortest, title) => (shortest === undefined || title.length < shortest.length ? title : shortest),
+    undefined,
+  );
+}
+
+export function longestTitle(stories: Story[]): string | undefined {
+  return stories.map((story) => story.title).reduce<string | undefined>(
+    (longest, title) => (longest === undefined || title.length > longest.length ? title : longest),
+    undefined,
+  );
+}
