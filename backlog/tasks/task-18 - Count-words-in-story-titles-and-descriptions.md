@@ -1,7 +1,7 @@
 ---
 id: TASK-18
 title: Count words in story titles and descriptions
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 19:03'
 updated_date: '2026-11-01 19:04'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 titleWords, totalTitleWords, longestWord and averageTitleWords in src/stories.ts return what their names say
-- [ ] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
+- [x] #1 titleWords, totalTitleWords, longestWord and averageTitleWords in src/stories.ts return what their names say
+- [x] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
 <!-- AC:END -->
