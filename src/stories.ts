@@ -77,3 +77,33 @@ export function longestTitle(stories: Story[]): string | undefined {
     undefined,
   );
 }
+
+function wordsOf(title: string): string[] {
+  return title.split(/\s+/).filter((word) => word.length > 0);
+}
+
+export function titleWords(story: Story): number {
+  return wordsOf(story.title).length;
+}
+
+export function totalTitleWords(stories: Story[]): number {
+  return stories.reduce((total, story) => total + titleWords(story), 0);
+}
+
+export function longestWord(stories: Story[]): string | undefined {
+  return stories.flatMap((story) => wordsOf(story.title)).reduce<string | undefined>(
+    (longest, word) => (longest === undefined || word.length > longest.length ? word : longest),
+    undefined,
+  );
+}
+
+export function averageTitleWords(stories: Story[]): number {
+  if (stories.length === 0) {
+    return 0;
+  }
+  return totalTitleWords(stories) / stories.length;
+}
+
+export function titleCount(stories: Story[]): number {
+  return stories.filter((story) => story.title.length > 0).length;
+}
