@@ -1,10 +1,10 @@
 ---
 id: TASK-16
 title: Read the first and last story and search titles
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-01 15:00'
-updated_date: '2026-11-01 15:02'
+updated_date: '2026-11-01 15:03'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,9 +35,9 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 firstStory and lastStory in src/stories.ts return the first and the last story, or undefined
-- [ ] #2 storiesWithTitle in src/stories.ts returns the stories whose title contains the word
-- [ ] #3 test/stories.test.ts tests each of the three with an empty list and a list of two
+- [x] #1 firstStory and lastStory in src/stories.ts return the first and the last story, or undefined
+- [x] #2 storiesWithTitle in src/stories.ts returns the stories whose title contains the word
+- [x] #3 test/stories.test.ts tests each of the three with an empty list and a list of two
 <!-- AC:END -->
 
 ## Implementation Notes
