@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle, titleWords, totalTitleWords, longestWord, averageTitleWords, titleCount } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -134,4 +134,50 @@ test("longestTitle returns undefined for an empty list and the longer title of t
       { id: "TASK-2", title: "Fix" },
     ]),
   ).toBe("Export");
+});
+
+test("titleWords of an empty title is 0 and counts the words of a title of two", () => {
+  expect(titleWords({ id: "TASK-1", title: "" })).toBe(0);
+  expect(titleWords({ id: "TASK-2", title: "Fix, then ship" })).toBe(3);
+  expect(titleWords({ id: "TASK-3", title: "Export  data" })).toBe(2);
+});
+
+test("totalTitleWords is 0 for an empty list and sums the words of two stories", () => {
+  expect(totalTitleWords([])).toBe(0);
+  expect(
+    totalTitleWords([
+      { id: "TASK-1", title: "Fix, then ship" },
+      { id: "TASK-2", title: "Export" },
+    ]),
+  ).toBe(4);
+});
+
+test("longestWord is undefined for an empty list and the longest word of two stories", () => {
+  expect(longestWord([])).toBeUndefined();
+  expect(
+    longestWord([
+      { id: "TASK-1", title: "Fix, then ship" },
+      { id: "TASK-2", title: "Export" },
+    ]),
+  ).toBe("Export");
+});
+
+test("averageTitleWords is 0 for an empty list and the mean word count of two stories", () => {
+  expect(averageTitleWords([])).toBe(0);
+  expect(
+    averageTitleWords([
+      { id: "TASK-1", title: "Fix, then ship" },
+      { id: "TASK-2", title: "Export" },
+    ]),
+  ).toBe(2);
+});
+
+test("titleCount is 0 for an empty list and counts the stories with a non-empty title", () => {
+  expect(titleCount([])).toBe(0);
+  expect(
+    titleCount([
+      { id: "TASK-1", title: "Export" },
+      { id: "TASK-2", title: "" },
+    ]),
+  ).toBe(1);
 });
