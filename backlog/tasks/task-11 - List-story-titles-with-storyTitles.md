@@ -1,15 +1,18 @@
 ---
 id: TASK-11
 title: List story titles with storyTitles
-status: In Review
+status: Done
 assignee: []
 created_date: '2026-11-01 14:39'
-updated_date: '2026-11-01 14:44'
+updated_date: '2026-11-01 14:45'
 labels:
   - 'tier:S'
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -38,3 +41,18 @@ test_plan:
 - [x] #1 storyTitles in src/stories.ts returns the title of each story in order
 - [x] #2 test/stories.test.ts tests two stories and the empty list
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-01 14:45 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 1, failed 0
+- Budget used: 18,554 of 300,000 tokens
+- Runs: 1; resumes: 0
+- Parks: none
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
