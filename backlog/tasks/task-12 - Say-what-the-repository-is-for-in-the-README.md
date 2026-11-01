@@ -1,9 +1,10 @@
 ---
 id: TASK-12
 title: Say what the repository is for in the README
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 14:39'
+updated_date: '2026-11-01 14:47'
 labels:
   - 'tier:S'
 milestone: m-0
