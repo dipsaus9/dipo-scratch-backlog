@@ -1,9 +1,10 @@
 ---
 id: TASK-15
 title: Say what src/stories.ts holds in a header comment
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-01 14:55'
+updated_date: '2026-11-01 14:57'
 labels:
   - 'tier:S'
 milestone: m-0
