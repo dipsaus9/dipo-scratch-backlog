@@ -1,10 +1,10 @@
 ---
 id: TASK-19
 title: Count letters in story titles
-status: In Review
+status: In Progress
 assignee: []
 created_date: '2026-11-02 08:50'
-updated_date: '2026-11-02 08:58'
+updated_date: '2026-11-02 09:06'
 labels:
   - 'tier:S'
   - test-before-merge
