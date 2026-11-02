@@ -123,6 +123,7 @@ export function shortestWord(stories: Story[]): string | undefined {
   );
 }
 
+/** Returns the upper-case title of each story, in order. */
 export function upperTitles(stories: Story[]): string[] {
   return stories.map((story) => story.title.toUpperCase());
 }
