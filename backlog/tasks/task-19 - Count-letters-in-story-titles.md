@@ -1,10 +1,10 @@
 ---
 id: TASK-19
 title: Count letters in story titles
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-02 08:50'
-updated_date: '2026-11-02 08:52'
+updated_date: '2026-11-02 08:53'
 labels:
   - 'tier:S'
   - test-before-merge
@@ -39,6 +39,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 titleLetters, totalTitleLetters, shortestWord and upperTitles in src/stories.ts return what their names say
-- [ ] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
+- [x] #1 titleLetters, totalTitleLetters, shortestWord and upperTitles in src/stories.ts return what their names say
+- [x] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
 <!-- AC:END -->
