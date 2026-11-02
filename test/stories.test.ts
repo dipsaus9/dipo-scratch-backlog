@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle, titleWords, totalTitleWords, longestWord, averageTitleWords, titleCount } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle, titleWords, totalTitleWords, longestWord, averageTitleWords, titleCount, titleLetters, totalTitleLetters, shortestWord, upperTitles } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -180,4 +180,40 @@ test("titleCount is 0 for an empty list and counts the stories with a non-empty 
       { id: "TASK-2", title: "" },
     ]),
   ).toBe(1);
+});
+
+test("titleLetters is 0 for an empty title and counts the letters of a title of two", () => {
+  expect(titleLetters({ id: "TASK-1", title: "" })).toBe(0);
+  expect(titleLetters({ id: "TASK-2", title: "Fix, then 2 ship" })).toBe(11);
+  expect(titleLetters({ id: "TASK-3", title: "Export" })).toBe(6);
+});
+
+test("totalTitleLetters is 0 for an empty list and sums the letters of two stories", () => {
+  expect(totalTitleLetters([])).toBe(0);
+  expect(
+    totalTitleLetters([
+      { id: "TASK-1", title: "Fix, then ship" },
+      { id: "TASK-2", title: "Export 2" },
+    ]),
+  ).toBe(17);
+});
+
+test("shortestWord is undefined for an empty list and the shortest word of two stories", () => {
+  expect(shortestWord([])).toBeUndefined();
+  expect(
+    shortestWord([
+      { id: "TASK-1", title: "Fix, then ship" },
+      { id: "TASK-2", title: "Export" },
+    ]),
+  ).toBe("Fix,");
+});
+
+test("upperTitles is [] for an empty list and the upper-case titles of two stories", () => {
+  expect(upperTitles([])).toEqual([]);
+  expect(
+    upperTitles([
+      { id: "TASK-1", title: "ab c" },
+      { id: "TASK-2", title: "Export" },
+    ]),
+  ).toEqual(["AB C", "EXPORT"]);
 });
