@@ -1,7 +1,7 @@
 ---
 id: TASK-19
 title: Count letters in story titles
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-02 08:50'
 updated_date: '2026-11-02 08:58'
