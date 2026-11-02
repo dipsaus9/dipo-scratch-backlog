@@ -107,3 +107,24 @@ export function averageTitleWords(stories: Story[]): number {
 export function titleCount(stories: Story[]): number {
   return stories.filter((story) => story.title.length > 0).length;
 }
+
+export function titleLetters(story: Story): number {
+  return story.title.replace(/[^a-zA-Z]/g, "").length;
+}
+
+export function totalTitleLetters(stories: Story[]): number {
+  return stories.reduce((total, story) => total + titleLetters(story), 0);
+}
+
+/** Returns the shortest word across all story titles, or undefined when there are none. */
+export function shortestWord(stories: Story[]): string | undefined {
+  return stories.flatMap((story) => wordsOf(story.title)).reduce<string | undefined>(
+    (shortest, word) => (shortest === undefined || word.length < shortest.length ? word : shortest),
+    undefined,
+  );
+}
+
+/** Returns the upper-case title of each story, in order. */
+export function upperTitles(stories: Story[]): string[] {
+  return stories.map((story) => story.title.toUpperCase());
+}

@@ -1,15 +1,19 @@
 ---
 id: TASK-19
 title: Count letters in story titles
-status: Ready
+status: Done
 assignee: []
 created_date: '2026-11-02 08:50'
+updated_date: '2026-11-02 09:08'
 labels:
   - 'tier:S'
   - test-before-merge
 milestone: m-0
 dependencies: []
 references:
+  - src/stories.ts
+  - test/stories.test.ts
+modified_files:
   - src/stories.ts
   - test/stories.test.ts
 type: feature
@@ -38,6 +42,21 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 titleLetters, totalTitleLetters, shortestWord and upperTitles in src/stories.ts return what their names say
-- [ ] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
+- [x] #1 titleLetters, totalTitleLetters, shortestWord and upperTitles in src/stories.ts return what their names say
+- [x] #2 test/stories.test.ts tests each of the four with an empty list and a list of two
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Closed 2026-11-02 09:08 UTC
+- Criteria met: 2 of 2 (as the worker reported them)
+- Loops: 0; CI attempts: 0 (red heads, reviewed or closed out, before this close-out)
+- Review rounds: 3, failed 0
+- Budget used: 55,959 of 300,000 tokens
+- Runs: 1; resumes: 0
+- Parks: none
+- Grants: none
+- Web calls: 0 searches, 0 fetches
+- Proposals filed: 0
+<!-- SECTION:FINAL_SUMMARY:END -->
