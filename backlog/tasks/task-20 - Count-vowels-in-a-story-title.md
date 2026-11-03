@@ -1,10 +1,10 @@
 ---
 id: TASK-20
 title: Count vowels in a story title
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-03 14:28'
-updated_date: '2026-11-03 14:31'
+updated_date: '2026-11-03 14:35'
 labels:
   - 'tier:S'
 milestone: m-0
