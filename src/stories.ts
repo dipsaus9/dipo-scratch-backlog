@@ -128,3 +128,8 @@ export function shortestWord(stories: Story[]): string | undefined {
 export function upperTitles(stories: Story[]): string[] {
   return stories.map((story) => story.title.toUpperCase());
 }
+
+/** Returns how many of the vowels a, e, i, o and u the story title holds, in either case. */
+export function titleVowels(story: Story): number {
+  return story.title.replace(/[^aeiou]/gi, "").length;
+}
