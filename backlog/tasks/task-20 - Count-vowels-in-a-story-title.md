@@ -1,7 +1,7 @@
 ---
 id: TASK-20
 title: Count vowels in a story title
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-03 14:28'
 updated_date: '2026-11-03 14:35'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 titleVowels in src/stories.ts counts the vowels a, e, i, o and u in a story title, in either case
-- [ ] #2 test/stories.test.ts tests titleVowels with an empty title and a title of mixed case
+- [x] #1 titleVowels in src/stories.ts counts the vowels a, e, i, o and u in a story title, in either case
+- [x] #2 test/stories.test.ts tests titleVowels with an empty title and a title of mixed case
 <!-- AC:END -->
