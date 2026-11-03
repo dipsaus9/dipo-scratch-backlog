@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 
-import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle, titleWords, totalTitleWords, longestWord, averageTitleWords, titleCount, titleLetters, totalTitleLetters, shortestWord, upperTitles } from "../src/stories";
+import { countStories, exportCsv, exportJson, findStory, firstStory, lastStory, longestTitle, shortestTitle, sortStories, storyIds, storyLabel, storyLine, storyTitles, storiesWithTitle, titleWords, totalTitleWords, longestWord, averageTitleWords, titleCount, titleLetters, totalTitleLetters, shortestWord, titleVowels, upperTitles } from "../src/stories";
 
 test("a story line names the id and the title", () => {
   expect(storyLine({ id: "TASK-1", title: "Export" })).toBe("TASK-1 Export");
@@ -216,4 +216,9 @@ test("upperTitles is [] for an empty list and the upper-case titles of two stori
       { id: "TASK-2", title: "Export" },
     ]),
   ).toEqual(["AB C", "EXPORT"]);
+});
+
+test("titleVowels is 0 for an empty title and counts both cases in a mixed-case title", () => {
+  expect(titleVowels({ id: "TASK-1", title: "" })).toBe(0);
+  expect(titleVowels({ id: "TASK-2", title: "Fix, Then SHIP" })).toBe(3);
 });
