@@ -1,10 +1,10 @@
 ---
 id: TASK-25
 title: Shout a text with shout
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-05 12:42'
-updated_date: '2026-11-05 12:43'
+updated_date: '2026-11-05 12:56'
 labels:
   - 'tier:S'
 milestone: m-0
