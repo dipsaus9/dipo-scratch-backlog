@@ -1,7 +1,7 @@
 ---
 id: TASK-24
 title: Reverse a text with reverseText
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-05 11:40'
 updated_date: '2026-11-05 11:45'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 reverseText in src/reverse.ts returns the characters of the text in reverse order
-- [ ] #2 test/reverse.test.ts tests reverseText with an empty text and one word
+- [x] #1 reverseText in src/reverse.ts returns the characters of the text in reverse order
+- [x] #2 test/reverse.test.ts tests reverseText with an empty text and one word
 <!-- AC:END -->
