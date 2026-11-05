@@ -1,7 +1,7 @@
 ---
 id: TASK-25
 title: Shout a text with shout
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-05 12:42'
 updated_date: '2026-11-05 12:56'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 shout in src/shout.ts returns the text in upper case followed by an exclamation mark
-- [ ] #2 test/shout.test.ts tests shout with one word
+- [x] #1 shout in src/shout.ts returns the text in upper case followed by an exclamation mark
+- [x] #2 test/shout.test.ts tests shout with one word
 <!-- AC:END -->
