@@ -1,7 +1,7 @@
 ---
 id: TASK-22
 title: Keep a number in a range with clamp
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-05 11:40'
 updated_date: '2026-11-05 11:45'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 clamp in src/clamp.ts returns min below the range, max above it and the value inside it
-- [ ] #2 test/clamp.test.ts tests clamp below, inside and above the range
+- [x] #1 clamp in src/clamp.ts returns min below the range, max above it and the value inside it
+- [x] #2 test/clamp.test.ts tests clamp below, inside and above the range
 <!-- AC:END -->
