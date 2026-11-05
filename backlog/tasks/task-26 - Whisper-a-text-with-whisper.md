@@ -1,10 +1,10 @@
 ---
 id: TASK-26
 title: Whisper a text with whisper
-status: Ready
+status: In Progress
 assignee: []
 created_date: '2026-11-05 13:17'
-updated_date: '2026-11-05 13:17'
+updated_date: '2026-11-05 13:20'
 labels:
   - 'tier:S'
 milestone: m-0
