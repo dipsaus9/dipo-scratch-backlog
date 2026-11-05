@@ -1,0 +1,9 @@
+# Scratch office for dipo live tests (M2 hand test): Haiku everywhere to keep cost low.
+version: 16
+caps:
+  parallelRuns: 3
+review:
+  model: haiku
+  effort: low
+scan:
+  model: haiku
