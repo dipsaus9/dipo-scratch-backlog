@@ -1,10 +1,10 @@
 ---
 id: TASK-21
 title: Greet a person by name with greet
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-05 11:40'
-updated_date: '2026-11-05 11:44'
+updated_date: '2026-11-05 11:45'
 labels:
   - 'tier:S'
 milestone: m-0
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 greet in src/greet.ts returns Hello, followed by the name and an exclamation mark
-- [ ] #2 test/greet.test.ts tests greet with one name
+- [x] #1 greet in src/greet.ts returns Hello, followed by the name and an exclamation mark
+- [x] #2 test/greet.test.ts tests greet with one name
 <!-- AC:END -->
