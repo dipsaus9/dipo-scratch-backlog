@@ -1,7 +1,7 @@
 ---
 id: TASK-25
 title: Shout a text with shout
-status: Refined
+status: Ready
 assignee: []
 created_date: '2026-11-05 12:42'
 updated_date: '2026-11-05 12:43'
