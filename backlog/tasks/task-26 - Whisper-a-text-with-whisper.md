@@ -1,7 +1,7 @@
 ---
 id: TASK-26
 title: Whisper a text with whisper
-status: In Progress
+status: In Review
 assignee: []
 created_date: '2026-11-05 13:17'
 updated_date: '2026-11-05 13:20'
@@ -35,6 +35,6 @@ test_plan:
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 whisper in src/whisper.ts returns the text in lower case followed by three dots
-- [ ] #2 test/whisper.test.ts tests whisper with one word
+- [x] #1 whisper in src/whisper.ts returns the text in lower case followed by three dots
+- [x] #2 test/whisper.test.ts tests whisper with one word
 <!-- AC:END -->
