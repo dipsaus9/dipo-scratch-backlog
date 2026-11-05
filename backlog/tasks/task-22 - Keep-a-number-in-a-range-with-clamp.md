@@ -1,9 +1,10 @@
 ---
 id: TASK-22
 title: Keep a number in a range with clamp
-status: Refined
+status: Ready
 assignee: []
 created_date: '2026-11-05 11:40'
+updated_date: '2026-11-05 11:41'
 labels:
   - 'tier:S'
 milestone: m-0

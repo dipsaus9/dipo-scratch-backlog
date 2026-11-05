@@ -1,9 +1,10 @@
 ---
 id: TASK-23
 title: Read the initials of a name with initials
-status: Refined
+status: Ready
 assignee: []
 created_date: '2026-11-05 11:40'
+updated_date: '2026-11-05 11:41'
 labels:
   - 'tier:S'
 milestone: m-0

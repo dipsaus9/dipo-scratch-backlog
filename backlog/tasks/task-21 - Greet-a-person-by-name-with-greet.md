@@ -1,9 +1,10 @@
 ---
 id: TASK-21
 title: Greet a person by name with greet
-status: Refined
+status: Ready
 assignee: []
 created_date: '2026-11-05 11:40'
+updated_date: '2026-11-05 11:41'
 labels:
   - 'tier:S'
 milestone: m-0
